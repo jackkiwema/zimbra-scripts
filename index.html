@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimbra Batch Scripts</title>
+</head>
+<body>
+
+    <form name="createAccount">
+        <center>
+            <h1>Create Account</h1>
+            Domain <input id="domain" type="text">   Password <input id="password" type="password">
+            <input id="pass-change" type="checkbox"> Password Must Change
+            <input id="admin" type="checkbox">Admin <br>
+            <input id="csv-file" type="file"><br>
+            <button type="button" onclick="convertToZimbraCAScript()">Create Account</button>
+            <input id="download" type="checkbox"> Download
+            <br>
+            <textarea id="csv-content" rows="60" cols="60" style="font-size:14px; font-family:Courier New;">
+                Copy Your csv file here
+Remove this instructions text (CTRL+A, DEL) and paste your csv text here, or attach above
+            </textarea>
+            <textarea id="output" rows="60" cols="60" style="font-size:14px; font-family:Courier New;">
+
+            </textarea>
+        </center>
+
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+</html>
